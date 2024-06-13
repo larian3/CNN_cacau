@@ -102,7 +102,7 @@ plt.grid(True, linestyle='--', alpha=0.7)
 plt.legend(loc='lower right', fontsize=12)
 
 # Salva a figura em alta resolução
-plt.savefig('curve_accuracy.png', dpi=300)
+plt.savefig('learning_curve.png', dpi=300)
 
 # Exibe o gráfico
 plt.show()

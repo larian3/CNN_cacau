@@ -20,7 +20,7 @@ def getImgByClass(path, category):
 def loadData():
     (X1, y1) = getImgByClass(os.getcwd()+"/banco_imagens/treino/saudavel/*.jpg", 0)
     (X2, y2) = getImgByClass(os.getcwd()+"/banco_imagens/treino/podridao_parda/*jpg", 1)
-    (X3, y3) = getImgByClass(os.getcwd()+"/banco_imagens/treino/broca_da_vagem/*.jpg", 2)
+    (X3, y3) = getImgByClass(os.getcwd()+"/banco_imagens/treino/vassoura/*.jpg", 2)
 
     X = np.concatenate([X1,X2,X3], axis=0)
     y = np.concatenate([y1,y2,y3], axis=0)
@@ -38,7 +38,7 @@ def loadDataUnit():
 def loadDataTest():
     (X1, y1) = getImgByClass(os.getcwd()+"/banco_imagens/teste/saudavel/*.jpg", 0)
     (X2, y2) = getImgByClass(os.getcwd()+"/banco_imagens/teste/podridao_parda/*jpg", 1)
-    (X3, y3) = getImgByClass(os.getcwd()+"/banco_imagens/teste/broca_da_vagem/*.jpg", 2)
+    (X3, y3) = getImgByClass(os.getcwd()+"/banco_imagens/teste/vassoura/*.jpg", 2)
 
     X = np.concatenate([X1,X2,X3], axis=0)
     y = np.concatenate([y1,y2,y3], axis=0)
